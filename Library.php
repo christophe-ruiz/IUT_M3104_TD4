@@ -1,5 +1,5 @@
 <?php
-include 'quicksort.php';
+
 
 class Library
 {
@@ -96,10 +96,11 @@ class Library
 
     function sortingRule (Book $book1, Book $book2)
     {
-        return (($book1->getAuthor() > $book2->getAuthor()) ? 1 : ($book1->getAuthor() > $book2->getAuthor()) ? -1 : 0))
+        return (($book1->getAuthor() > $book2->getAuthor()) ? 1 : ($book1->getAuthor() > $book2->getAuthor()) ? -1 : 0);
     }
 
     public function sortByAuthor ()
     {
         sort($this->books, sortingRule());
     }
+}
