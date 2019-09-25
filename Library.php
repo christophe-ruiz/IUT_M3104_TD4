@@ -81,9 +81,17 @@ class Library
         }
     }
 
-    public function deleteDuplicates () {}
+    public function deleteDuplicates () {
 
-    public function showCommonBooks (Library $otherLibrary) {}
+    }
+
+    public function showCommonBooks (Library $otherLibrary) {
+        foreach ($this->books as $book1) {
+            foreach ($otherLibrary->books as $book2) {
+
+            }
+        }
+    }
 
     public function sortByAuthor () {}
 }
