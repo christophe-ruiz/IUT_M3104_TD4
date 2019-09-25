@@ -39,22 +39,22 @@ class Library
     }
 
     // SETTERS
-    public function setAdress($adress)
+    public function setAdress(&$adress)
     {
         $this->adress = $adress;
     }
 
-    public function setBooks($books)
+    public function setBooks(&$books)
     {
         $this->books = $books;
     }
 
-    public function setMax($max)
+    public function setMax(&$max)
     {
         $this->max = $max;
     }
 
-    public function setName($name)
+    public function setName(&$name)
     {
         $this->name = $name;
     }
@@ -67,9 +67,19 @@ class Library
         }
     }
 
-    public function addBook () {}
+    public function addBook (Book &$newBook) {
+        if (count($this->books) < self::MAX_BOOKS) {
+            $this->books[] = $newBook;
+        }
+    }
 
-    public function removeBook () {}
+    public function removeBook (Book &$trash) {
+        foreach ($this->books as $key => $book) {
+            if ($book == $trash ) {
+                unset($this->books[$key]);
+            }
+        }
+    }
 
     public function deleteDuplicates () {}
 

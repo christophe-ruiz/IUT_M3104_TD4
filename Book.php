@@ -60,5 +60,8 @@ class Book
 
     // MISC.
 
-    public function show() {}
+    public function show() {
+        echo '<div class = "author">' . PHP_EOL . '\t' . $this->author . PHP_EOL . '</div>' . PHP_EOL;
+        echo '<div class = "bookTitle">' . PHP_EOL . '\t' . $this->title . PHP_EOL . '</div>' . PHP_EOL;
+    }
 }
