@@ -86,8 +86,8 @@ class Library
     }
 
     public function showCommonBooks (Library $otherLibrary) {
-        foreach ($this->books as $key1 => $book1) {
-            foreach ($otherLibrary->books as $key2 => $book2) {
+        foreach ($this->books as $book1) {
+            foreach ($otherLibrary->books as $book2) {
                 if ($book2->getTitle() == $book1->getTitle() && $book2->getAuthor() == $book1->getAuthor())
                     $book1->show();
             }
