@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="form">
+    <div class="bookForm">
         <form action="createBook.php" method="POST">
             <label for="title">Titre</label>
             <input name="title" placeholder="Entrez le titre de livre" type="text">
@@ -24,7 +24,7 @@
         </form>
     </div>
 
-    <div class="form">
+    <div class="libForm">
         <form action="createLibrary.php" method="POST">
             <label for="libName">Nom</label>
             <input name="libName" placeholder="Bibliothèque nationale de France" type="text">
@@ -32,14 +32,15 @@
             <label for="libAddress">Adresse</label>
             <input name="libAddress" placeholder="Quai François Mauriax, 75706 Paris" type="text">
 
-            <label for="editor">Editeur</label>
-            <input name="editor" placeholder="Entrez l'éditeur du livre" type="text">
-
-            <label for="pages">Nombre de pages</label>
-            <input name="pages" placeholder="Entrez le nombre de pages du livre" type="text">
+            <label for="libMax">Nb. de livres max</label>
+            <input name="libMax" placeholder="5" type="text">
 
             <input name="action" type="submit" value="Créer">
         </form>
+    </div>
+
+    <div class="actions">
+        <a href="./php/libraryActions.php"> ACTIONS </a>
     </div>
 </body>
 </html>
