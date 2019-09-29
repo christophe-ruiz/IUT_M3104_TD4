@@ -23,13 +23,14 @@
             <input name="action" type="submit" value="Créer">
         </form>
     </div>
+
     <div class="form">
         <form action="createLibrary.php" method="POST">
-            <label for="title">Titre</label>
-            <input name="title" placeholder="Entrez le titre de livre" type="text">
+            <label for="libName">Nom</label>
+            <input name="libName" placeholder="Bibliothèque nationale de France" type="text">
 
-            <label for="author">Auteur</label>
-            <input name="author" placeholder="Entrez l'auteur du livre" type="text">
+            <label for="libAddress">Adresse</label>
+            <input name="libAddress" placeholder="Quai François Mauriax, 75706 Paris" type="text">
 
             <label for="editor">Editeur</label>
             <input name="editor" placeholder="Entrez l'éditeur du livre" type="text">

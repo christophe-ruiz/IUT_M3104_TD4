@@ -3,12 +3,12 @@ require_once 'Book.php';
 
 class Library
 {
-    const MAX_BOOKS = 5;
+    //const MAX_BOOKS = 5;
 
     private $name;
     private $address;
     private $max;
-    private $books = array(self::MAX_BOOKS);
+    private $books = array();
 
     public function __construct($name, $address, $max)
     {
@@ -68,7 +68,7 @@ class Library
     }
 
     public function addBook (Book &$newBook) {
-        if (count($this->books) < self::MAX_BOOKS) {
+        if (count($this->books) < $this->max) {
             $this->books[] = $newBook;
         }
     }
