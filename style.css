@@ -100,5 +100,5 @@ body {
 .actions>a:hover {
     transition: 0.1s;
     transform: scale(1.1);
-    border: dot-dash 1px;
+    border: dotted 1px;
 }
