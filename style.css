@@ -87,5 +87,18 @@ body {
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-size: 5vh;
+
     color: #ABCAE9;
+    background: rgba(0,0,0,0.3);
+
+    border-radius: 5vh;
+    padding: 0.5vh 2vh;
+
+    transition: 0.1s;
+}
+
+.actions>a:hover {
+    transition: 0.1s;
+    transform: scale(1.1);
+    border: dot-dash 1px;
 }
