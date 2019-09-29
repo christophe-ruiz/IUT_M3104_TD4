@@ -10,18 +10,18 @@
         <h1 class="bookTextColor"> Book </h1>
         <form action="createBook.php" method="POST">
             <label class="bookTextColor" for="title">Titre</label>
-            <input class="breath" name="title" placeholder="Entrez le titre de livre" type="text">
+            <input class="breath" name="title" placeholder="Charles Baudelaire" type="text">
 
             <label class="bookTextColor" for="author">Auteur</label>
-            <input class="breath" name="author" placeholder="Entrez l'auteur du livre" type="text">
+            <input class="breath" name="author" placeholder="Les Fleurs du mal" type="text">
 
             <label class="bookTextColor" for="editor">Editeur</label>
-            <input class="breath" name="editor" placeholder="Entrez l'éditeur du livre" type="text">
+            <input class="breath" name="editor" placeholder="Flammarion" type="text">
 
             <label class="bookTextColor" for="pages">Nombre de pages</label>
-            <input class="breath" name="pages" placeholder="Entrez le nombre de pages du livre" type="text">
+            <input class="breath" name="pages" placeholder="288" type="text">
 
-            <input class="bookTextColor" name="action" type="submit" value="Créer">
+            <input id="bookSend" name="action" type="submit" value="Créer">
         </form>
     </div>
 
@@ -37,7 +37,7 @@
             <label class="libTextColor" for="libMax">Nb. de livres max</label>
             <input class="breath" name="libMax" placeholder="5" type="text">
 
-            <input class="libTextColor" name="action" type="submit" value="Créer">
+            <input id="libSend" name="action" type="submit" value="Créer">
         </form>
     </div>
 
