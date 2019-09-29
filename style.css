@@ -28,7 +28,12 @@ body {
 
 .bookForm, .libForm {
     width: 50%;
+    height: 90vh;
+
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .bookForm>form, .libForm>form {
@@ -68,4 +73,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background: #002A3A;
+    color: #ABCAE9;
 }

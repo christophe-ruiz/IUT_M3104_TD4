@@ -29,13 +29,13 @@
         <h1 class="libTextColor"> Library </h1>
         <form action="createLibrary.php" method="POST">
             <label class="libTextColor" for="libName">Nom</label>
-            <input name="libName" placeholder="Bibliothèque nationale de France" type="text">
+            <input class="breath" name="libName" placeholder="Bibliothèque nationale de France" type="text">
 
             <label class="libTextColor" for="libAddress">Adresse</label>
-            <input name="libAddress" placeholder="Quai François Mauriax, 75706 Paris" type="text">
+            <input class="breath" name="libAddress" placeholder="Quai François Mauriax, 75706 Paris" type="text">
 
             <label class="libTextColor" for="libMax">Nb. de livres max</label>
-            <input name="libMax" placeholder="5" type="text">
+            <input class="breath" name="libMax" placeholder="5" type="text">
 
             <input class="libTextColor" name="action" type="submit" value="Créer">
         </form>
