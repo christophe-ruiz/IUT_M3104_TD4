@@ -26,13 +26,13 @@ body {
     background: #5C4580;
 }
 
-.bookForm, libForm {
+.bookForm, .libForm {
     width: 50%;
     display: flex;
 }
 
 .bookForm>form, .libForm>form {
-    width: 100%;
+    width: 50%;
     height: 90vh;
 
     display: flex;
