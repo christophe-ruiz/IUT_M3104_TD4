@@ -7,8 +7,8 @@
 </head>
 <body>
     <div class="bookForm">
+        <h1 class="bookTextColor"> Book </h1>
         <form action="createBook.php" method="POST">
-            <h1 class="bookTextColor"> Book </h1>
             <label class="bookTextColor" for="title">Titre</label>
             <input class="breath" name="title" placeholder="Entrez le titre de livre" type="text">
 
@@ -26,8 +26,8 @@
     </div>
 
     <div class="libForm">
+        <h1 class="libTextColor"> Library </h1>
         <form action="createLibrary.php" method="POST">
-            <h1 class="libTextColor"> Library </h1>
             <label class="libTextColor" for="libName">Nom</label>
             <input name="libName" placeholder="Bibliothèque nationale de France" type="text">
 
