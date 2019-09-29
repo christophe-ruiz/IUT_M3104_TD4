@@ -108,6 +108,6 @@ class Library
 
     public function sortByAuthor ()
     {
-        sort($this->books, sortingRule());
+        sort($this->books, $this->sortingRule());
     }
 }
