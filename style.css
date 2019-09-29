@@ -32,7 +32,7 @@ body {
 }
 
 .bookForm>form, .libForm>form {
-    width: 50%;
+    width: 100%;
     height: 90vh;
 
     display: flex;
@@ -48,7 +48,6 @@ body {
 .bookForm>form>h1, .libForm>form>h1 {
     font-size: 10vw;
     font-family: 'Quicksand', sans-serif;
-    margin-bottom: 10vh;
 }
 
 .bookForm>form>label, .libForm>form>label {
