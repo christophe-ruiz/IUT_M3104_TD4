@@ -1,26 +1,26 @@
 <?php
-
+require_once 'Book.php';
 
 class Library
 {
     const MAX_BOOKS = 5;
 
     private $name;
-    private $adress;
+    private $address;
     private $max;
     private $books = array(self::MAX_BOOKS);
 
-    public function __construct($name, $adress, $max)
+    public function __construct($name, $address, $max)
     {
         $this->name = $name;
-        $this->adress = $adress;
+        $this->address = $address;
         $this->max = $max;
     }
 
     // GETTERS
-    public function getAdress()
+    public function getAddress()
     {
-        return $this->adress;
+        return $this->address;
     }
 
     public function getBooks()
@@ -39,9 +39,9 @@ class Library
     }
 
     // SETTERS
-    public function setAdress(&$adress)
+    public function setAddress(&$address)
     {
-        $this->adress = $adress;
+        $this->address = $address;
     }
 
     public function setBooks(&$books)
@@ -82,7 +82,14 @@ class Library
     }
 
     public function deleteDuplicates () {
-
+        foreach ($this->books as $key1 => $book1) {
+            foreach ($this->books as $key2 => $book2) {
+                if ($book2->getTitle() == $book1->getTitle() && $book2->getAuthor() == $book1->getAuthor()
+                    && $key1 != $key2) {
+                    unset($this->books[$key1]);
+                }
+            }
+        }
     }
 
     public function showCommonBooks (Library $otherLibrary) {
