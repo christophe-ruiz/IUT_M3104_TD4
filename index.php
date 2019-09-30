@@ -21,7 +21,7 @@
             <label class="bookTextColor" for="pages">Nombre de pages</label>
             <input class="breath" name="pages" placeholder="288" type="text">
 
-            <input id="bookSend" name="action" type="submit" value="Créer">
+            <input id="bookSend" name="bookAction" type="submit" value="Créer">
         </form>
     </div>
 
@@ -37,12 +37,13 @@
             <label class="libTextColor" for="libMax">Nb. de livres max</label>
             <input class="breath" name="libMax" placeholder="5" type="text">
 
-            <input id="libSend" name="action" type="submit" value="Créer">
+            <input id="libSend" name="libAction" type="submit" value="Créer">
         </form>
     </div>
 
     <div class="actions">
         <a href="./php/libraryActions.php"> ACTIONS </a>
+        <span><?= ($_SESSION['status']) ?></span>
     </div>
 </body>
 </html>

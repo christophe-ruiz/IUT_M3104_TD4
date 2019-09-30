@@ -67,6 +67,7 @@ body {
     height: 10vh;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -76,11 +77,13 @@ body {
 #bookSend {
     background: #EFC06E;
     border-radius: 5vh;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #libSend {
     background: #CCAED0;
     border-radius: 5vh;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .actions>a {
