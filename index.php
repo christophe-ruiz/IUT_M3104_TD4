@@ -46,5 +46,8 @@
         <a href="./php/libraryActions.php"> ACTIONS </a>
         <span><?= ($_SESSION['status']) ?></span>
     </div>
+<pre>
+    <?= $_SESSION ?>
+</pre>
 </body>
 </html>
