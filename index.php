@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
@@ -43,7 +44,7 @@
 
     <div class="actions">
         <a href="./php/libraryActions.php"> ACTIONS </a>
-        <span><?= ($_SESSION['status']) ?></span>
+        <span><?= $_SESSION['status'] ?></span>
     </div>
 <pre>
     <?= $_SESSION ?>
