@@ -8,6 +8,8 @@
 
         $Livre = new Book($author, $editor, $pages, $title);
 
+        if (!isset($_SESSION['Books'])) $_SESSION[] = 'Books';
+        if (!isset ($_SESSION['Books'][$author])) $_SESSION['Books'][] = $author;
         $_SESSION['Books'][$author] = $Livre;
         $_SESSION['status'] = 'Livre crée !';
         header('Location: index.php');
