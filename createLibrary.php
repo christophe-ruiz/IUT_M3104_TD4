@@ -9,7 +9,7 @@
 
         session_start();
         if (!isset($_SESSION['Libraries'])) $_SESSION[] = 'Libraries';
-        $_SESSION['Libraries'] = $Bibliotheque;
+        $_SESSION['Libraries'][] = $Bibliotheque;
         $_SESSION['status'] = 'Bibliothèque crée !';
         header('Location: index.php');
     } else {
