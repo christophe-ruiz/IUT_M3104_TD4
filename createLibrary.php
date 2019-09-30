@@ -8,7 +8,7 @@
         $Bibliotheque = new Library($name, $address, $max);
 
         session_start();
-        if (!isset($_SESSION['Libraries'])) $_SESSION[] = 'Libraries';
+        if (!isset($_SESSION['Libraries'])) $_SESSION['Libraries'] = array();
         $_SESSION['Libraries'][] = $Bibliotheque;
         $_SESSION['status'] = 'Bibliothèque crée !';
         header('Location: index.php');

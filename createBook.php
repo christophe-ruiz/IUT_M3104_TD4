@@ -9,8 +9,8 @@
         $Livre = new Book($author, $editor, $pages, $title);
 
         session_start();
-        if ( !isset($_SESSION['Books']) ) $_SESSION[] = 'Books';
-        if ( !isset ($_SESSION['Books'][$author]) ) $_SESSION['Books'] = $author;
+        if ( !isset($_SESSION['Books']) ) $_SESSION['Books'] = array();
+        if ( !isset ($_SESSION['Books'][$author]) ) $_SESSION['Books'][$author] = array();
 
         $_SESSION['Books'][] = $author;
         $_SESSION['Books'][$author][] = $Livre;
