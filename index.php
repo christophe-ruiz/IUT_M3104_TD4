@@ -47,7 +47,7 @@
         <span><?= $_SESSION['status'] ?></span>
     </div>
 <pre>
-    <?= $_SESSION ?>
+    <?= var_dump($_SESSION) ?>
 </pre>
 </body>
 </html>
