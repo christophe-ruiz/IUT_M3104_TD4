@@ -12,7 +12,6 @@
         if ( !isset($_SESSION['Books']) ) $_SESSION['Books'] = array();
         if ( !isset ($_SESSION['Books'][$author]) ) $_SESSION['Books'][$author] = array();
 
-        $_SESSION['Books'][] = $author;
         $_SESSION['Books'][$author][] = $Livre;
         $_SESSION['status'] = 'Livre crée !';
 
