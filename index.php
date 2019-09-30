@@ -44,7 +44,7 @@
 
     <div class="actions">
         <a href="./php/libraryActions.php"> ACTIONS </a>
-        <span><?= $_SESSION['status'] ?></span>
+        <span style="color: #ABCAE9; font-family: 'Quicksand', sans-serif; font-size: 1vh;"><?= $_SESSION['status'] ?></span>
     </div>
 <pre>
     <?= var_dump($_SESSION) ?>
