@@ -6,6 +6,8 @@
         $max = $_POST['libMax'];
 
         $Bibliotheque = new Library($name, $address, $max);
+
+        session_start();
         if (!isset($_SESSION['Libraries'])) $_SESSION[] = 'Libraries';
         $_SESSION['Libraries'] = $Bibliotheque;
         $_SESSION['status'] = 'Bibliothèque crée !';
